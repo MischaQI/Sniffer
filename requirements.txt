@@ -1,0 +1,14 @@
+transformers==4.34.1
+accelerate
+imageio==2.34.0
+opencv-python
+wandb
+gradio==3.40.0
+opencv-python-headless==4.5.5.64
+scikit-image==0.21.0
+fasttext
+google-api-core
+google-auth
+google-cloud
+google-cloud-vision
+googleapis-common-protos
