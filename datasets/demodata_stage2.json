@@ -1,0 +1,16 @@
+[
+    {
+        "idx": "1549888-fake",
+        "caption": "Protesters including senior members of Sinn Fein gathered on Saturday to call for the release of Gerry Adams",
+        "img_path": "guardian/images/0751/012.jpg",
+        "answer": "Yes, the image is wrongly used in a differnet news context. The given news caption and image are inconsistent in person. The person in caption is Gerry Adams, and the person in image is David Nicholson. element: person, entity_1: Gerry Adams, entity_2: David Nicholson.",
+        "label": "fake"
+    },
+    {
+        "idx": "1549888-real",
+        "caption": "Protesters including senior members of Sinn Fein gathered on Saturday to call for the release of Gerry Adams",
+        "img_path": "bbc/images/0247/605.jpg",
+        "answer": "No, the image is rightly used.",
+        "label": "real"
+    }
+]

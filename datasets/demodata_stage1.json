@@ -1,0 +1,68 @@
+[
+    {
+        "idx": "728421-0",
+        "question": "Deliver a compact exposition of the incident captured in the news photo.",
+        "answer": "Anthony Stokes last played a league game for Celtic in August",
+        "img_path": "guardian/images/0540/632.jpg"
+    },
+    {
+        "idx": "1503569-0",
+        "question": "What news event does this image describe?",
+        "answer": "Paul McGowan admitted assaulting two police officers in North Lanarkshire",
+        "img_path": "bbc/images/0117/160.jpg"
+    },
+    {
+        "idx": "830076-0",
+        "question": "Interpret the journalistic image and detail the key elements in a succinct manner.",
+        "answer": "Kell Brook successfully defended his title against Frankie Gavin in May but Diego Chaves is likely to offer him his biggest test since becoming world champion",
+        "img_path": "guardian/images/0435/014.jpg"
+    },
+    {
+        "idx": "781529-0",
+        "question": "Construct a short narrative to convey the news event shown in the image.",
+        "answer": "Carl Froch left battles it out with Mikkel Kessler during their supermiddleweight unification bout",
+        "img_path": "guardian/images/0597/707.jpg"
+    },
+    {
+        "idx": "592744-0",
+        "question": "Express the main news points illustrated by the given photograph.",
+        "answer": "Mohamed ElBaradei has been widely tipped to take up the post in the wake of Morsi s ousting",
+        "img_path": "guardian/images/0318/914.jpg"
+    },
+    {
+        "idx": "213447-0",
+        "question": "Provide a brief journalistic overview of the news picture.",
+        "answer": "March 19 Phillies second baseman Chase Utley scores in the first inning",
+        "img_path": "usa_today/images/0526/375.jpg"
+    },
+    {
+        "idx": "1656883-0",
+        "question": "Analyze the news image and provide a brief summary of the event it depicts.",
+        "answer": "French police used metal detectors on Wednesday to search a garden in the town of Talloires near the murder scene",
+        "img_path": "bbc/images/0478/934.jpg"
+    },
+    {
+        "idx": "973242-0",
+        "question": "Summarize the news story as represented by the image.",
+        "answer": "The Kadima party leader Shaul Mofaz who quit the coalition on Tuesday",
+        "img_path": "guardian/images/0177/402.jpg"
+    },
+    {
+        "idx": "1108399-0",
+        "question": "Give a short description of the scene shown in the news photograph.",
+        "answer": "Binyamin Netanyahu greets supporters at Likud s HQ after the first results of last week s election",
+        "img_path": "guardian/images/0705/155.jpg"
+    },
+    {
+        "idx": "330252-0",
+        "question": "Condense the news context of the image into a clear, brief description.",
+        "answer": "A woman pulls her suitcase as she walks past the Trump Taj Mahal casino resort in Atlantic City NJ May 8 2016",
+        "img_path": "usa_today/images/0294/073.jpg"
+    },
+    {
+        "idx": "461377-0",
+        "question": "Offer a concise report based on the news-related image provided.",
+        "answer": "Robert Stone in New York in 2013",
+        "img_path": "guardian/images/0817/867.jpg"
+    }
+]

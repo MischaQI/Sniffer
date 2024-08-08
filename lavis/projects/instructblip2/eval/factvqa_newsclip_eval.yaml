@@ -1,0 +1,90 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+model:
+  arch: blip2_vicuna_instruct
+  model_type: vicuna13b
+  load_finetuned: True 
+  use_grad_checkpoint: True
+  freeze_vit: True
+  max_txt_len: 550
+  # max_output_txt_len:
+
+  finetuned: "llm-ckpt/checkpoint_best.pth"
+
+  pretrained: "llm-ckpt/instruct_blip_vicuna13b_trimmed.pth"
+
+  llm_model: "llm-ckpt/vicuna-13b-v1.1"
+
+datasets:
+  newsclip_factvqa: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "blip2_image_train"
+          image_size: 224
+        eval:
+          name: "blip_image_eval"
+          image_size: 224
+    text_processor:
+        train:
+          name: "blip_caption_revised"
+          max_words: 256
+        eval:
+          name: "blip_caption_revised"
+          max_words: 256
+
+    build_info:
+      # Be careful not to append minus sign (-) before split to avoid itemizing
+      annotations:
+        train:
+          storage: train.json
+        val: 
+          storage:  val.json
+        test:
+          storage:  test.json
+      images:
+        storage: newsclip/images/
+      vis_entity:
+        storage: visentity.json
+        use_visentity: False
+
+
+
+run:
+  task: factvqa
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-5
+  min_lr: 0
+  warmup_lr: 1e-8
+  warmup_steps: 1000
+  weight_decay: 0.05
+  max_epoch: 1 
+  batch_size_train: 1
+  batch_size_eval: 1
+  num_workers: 4
+  accum_grad_iters: 1 
+
+  # inference-specific
+  max_len: 256
+  min_len: 8
+  num_beams: 1
+
+  seed: 42
+  output_dir: "output/blip2_vicuna_instruct/FactVQA_NewsClip_13B_evaluate"
+
+  amp: True
+  resume_ckpt_path: null 
+
+  evaluate: True 
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+
