@@ -35,6 +35,11 @@ Download the following pre-trained models and put them into `llm-ckpt`:
 - [bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)
 
 
+### Data Preparation
+Download the [NewsCLIPpings](https://github.com/g-luo/news_clippings) dataset and the corresponsing [evidences](https://github.com/S-Abdelnabi/OoC-multi-modal-fc).
+You can find the construction process of instruction data in our paper. We also show the demo data in ``/datasets``. 
+
+
 ## How to run
 
 ### Training 
