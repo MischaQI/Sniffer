@@ -45,7 +45,7 @@ def detect_web_v1(path):
     return vis_ents, titles, urls
 
 
-from demo.utils import get_captions_from_page,save_html
+from utils import get_captions_from_page,save_html
 import fasttext
 import os
 

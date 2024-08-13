@@ -12,7 +12,6 @@ Misinformation is a prevalent societal issue due to its potential high risks. Ou
 
 <video width='510' src="https://pengqi.site/Sniffer/assets/SNIFFER-demo-short.mov"></video>
 
-
 ## TODO
 - [x] Release inferecne demo code
 - [x] Release training and evaluation code
